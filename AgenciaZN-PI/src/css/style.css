@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+section {
+    background-color: rgb(241, 242, 245);
+
+}
+
+main {
+    height: 53vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    width: 400px;
+    background-color: rgb(214, 225, 235);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input,
+textarea {
+    padding: 10px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+label {
+    margin-left: 10px;
+    margin-bottom: 5px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+input:focus,
+textarea:focus {
+    background-color: #eef8ff;
+}
+
+button {
+    cursor: pointer;
+    background: #47b1d1;
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4892f3;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.mensagem {
+    position:fixed;
+    bottom: 0;
+    background-color: rgba(222, 225, 228, 0.5);
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.mensagem.sucesso {
+    background-color: rgba(13, 236, 13, 0.3);
+}
+
+.mensagem.erro {
+    background-color: rgba(247, 8, 8, 0.3);
+}
